@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link href="css/signup.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="registro" id="registroCont">
+        <h1>Registro</h1>
+         <input type="text" placeholder="Nombre" id="nameing">
+
+         <input type="text" placeholder="Teléfono" id="cel">
+
+         <input type="text" placeholder="Correo" id="mailing">
+
+         <input type="password" placeholder="Password" id="contra">
+
+         <input type="password" placeholder="Password Again" id="contra2">
+         
+         <button id="btnRegistrar">Registrar</button>
+    </div> 
+    <div class="registro">
+        <a href="login.html">Ya tengo cuenta</a>
+    </div>
+
+
+</body>
+
+</html>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyC5RCixHxQI8OPkt7AonPIo0QSjfxUDQCU",
+    authDomain: "semana16-88c06.firebaseapp.com",
+    projectId: "semana16-88c06",
+    storageBucket: "semana16-88c06.appspot.com",
+    messagingSenderId: "649647599142",
+    appId: "1:649647599142:web:abb76c4dc3e903cd4980e7",
+    measurementId: "G-BXHV3SNZKD"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+<script src= "js/signup.js"></script>
